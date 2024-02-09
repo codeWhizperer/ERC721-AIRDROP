@@ -89,8 +89,6 @@ mod SAMPLENFT {
 
     #[storage]
     struct Storage {
-        opened: bool,
-        blacklisted: LegacyMap<ContractAddress, bool>,
         #[substorage(v0)]
         src5: SRC5Component::Storage,
         #[substorage(v0)]
